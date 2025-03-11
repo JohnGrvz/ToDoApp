@@ -19,9 +19,9 @@ class Todo:
 
 class TodoBook:
     def __init__(self):
-        self.todos= {}
+        self.todos = {}
     def add_todo(self,title:str,description:str):
         code_id=len(self.todos)+1
         todo= Todo(code_id,title,description)
-        self.todos.append(todo)
+        self.todos.update(todo)
         return code_id
